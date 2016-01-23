@@ -1,0 +1,65 @@
+#interface > header {
+    border-bottom: 10px solid @vermelho;
+    background: url(../_imgs/bg-section1.png) no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+    height: 890px;
+    position: relative;
+    
+    hgroup {
+        padding: 50px;
+        max-width: 1000px;
+        margin: 0 auto;
+        
+        h1 {
+            float: left;
+            width: 331px;
+            height: 77px;
+            .imageReplacement('../_imgs/logo.png');
+        }
+        
+        #cadastreSe {
+            float: right;
+            margin-top: 15px;
+        }
+        
+        .fb-like, ul { display: none; }
+    }
+    
+    h2, h3 {
+        color: white;
+        width: 800px;
+        position: absolute;
+        left: 50%;
+        margin-left: -400px;
+    }
+    
+    h2 {
+        clear: both;
+        font-size: 43px;
+        top: 50%;
+        margin-top: -80px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        top: 50%;
+        margin-top: 150px;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    #descer {
+        a {
+            display: block;
+            width: 67px;
+            height: 44px;
+            position: absolute;
+            left: 50%;
+            margin-left: -33px;
+            bottom: 35px;
+            
+            .imageReplacement('../_imgs/arrow.png');
+        }
+    }
+}

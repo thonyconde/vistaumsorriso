@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 	
+	box-sizing: border-box;
+}
+
+/***** Global Settings *****/
+body { font:100%/1.25 'Arial Narrow', Arial, Helvetica, sans-serif; background-color: white; color: black; font-weight: 100; }
+header, footer, aside, hgroup, nav, section { display: block; }
+ 
+/***** Headings *****/
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+h1 { padding:30px 0 25px 0; letter-spacing:-1px; font-size:2em; }
+h2 { padding:20px 0; letter-spacing:-1px; font-size:1.5em; }
+h3 { font-size:1em; font-weight:bold; }
+ 
+/***** Common Formatting *****/
+p, ul, ol { margin:0; padding:0 0 1.25em 0; }
+ul, ol { padding:0 0 1.25em 2.5em; }
+blockquote { margin:1.25em; padding:1.25em 1.25em 0 1.25em; }
+blockquote:before, blockquote:after,q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+small { font-size:0.85em; }
+a img { border:0; outline: 0; }
+sup { position:relative; bottom:0.3em; vertical-align:baseline; }
+sub { position:relative; bottom:-0.2em; vertical-align:baseline; }
+acronym, abbr { cursor:help; letter-spacing:1px; border-bottom:1px dashed; }
+strong { font-weight:bold; }
+em { font-style:italic; }
+ 
+/***** Links an buttons *****/
+a, label, button, [type="button"] { cursor: pointer; }
+a, a:link, a:visited{ text-decoration:none; }
+a:hover { text-decoration:underline; }
+ 
+/***** Forms *****/
+form { margin:0; padding:0; display:inline; }
+input, select, textarea { font:1em Arial, Helvetica, sans-serif; }
+textarea { width:100%; line-height:1.25; }
+:focus { outline: 0; }
+button, input[type="submit"], input[type="reset"], input[type="button"]{}
+
+/***** Tables *****/
+table { border: 0; margin: 0 0 1.25em 0; padding: 0; border-collapse: separate; border-spacing: 0; }
+caption, th, td { padding: 2px; text-align: left; font-weight: normal; }
+
+/***** Lists *****/
+ol, ul { list-style: none; }
+
+/* SPRITE */
+.sprite {
+	background-image: url() !important;
+	background-repeat: no-repeat;
+}
+
+/* ICONS */
+[class^="ico-"] {
+	background-image: url();
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: ;
+	height: ;
+	vertical-align: middle;
+}
+
+/* ANIMATIONS */
+.animate {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+/* MODAL */
+#overlayModal { background-color: rgba(0,0,0,.7); position: fixed; top: 0; left: 0; right: 100%; bottom: 0; z-index: 9998; transition: .5s all }
+#overlayModal.show { top: 0; left: 0; right: 0; bottom: 0; }
+.modal { position: fixed; top: -2000px; left: 50%; margin-left: -200px; margin-top: -150px; width: 400px; height: 300px; background-color: white; z-index: 9999; padding: 15px; transition: all 1s;}
+.modal.show { top: 50%; }
+a.modal-close { float: right; }
+ 
+/***** Wrapper *****/
+#interfaceContent, .wrap { width: 960px; margin: 0 auto; }
+ 
+/***** Global Classes *****/
+.clear, .cb { clear:both; }
+.float-left, .fl { float:left; }
+.float-right , .fr { float:right; }
+ 
+.text-left, .tal  { text-align:left; }
+.text-right , .tar { text-align:right; }
+.text-center , .tac { text-align:center; }
+.text-justify , .taj { text-align:justify; }
+ 
+.underline { border-bottom:1px solid; }
+.highlight  { background:#ffc; }
+  
+.img-left  { float:left;margin:4px 10px 4px 0; }
+.img-right  { float:right;margin:4px 0 4px 10px; }
+ 
+.nopadding { padding:0; }
+.noindent { margin-left:0;padding-left:0; }
+.nobullet { list-style:none;list-style-image:none; }

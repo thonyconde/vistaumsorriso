@@ -1,0 +1,99 @@
+#section3 {
+    
+    ol {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        counter-reset: section;
+        min-width: 780px;
+        
+        
+        li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            height: 408px;
+            counter-increment: section;
+
+          
+            &:before {
+                content: '';
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+                margin-right: -0.25em; /* Adjusts for spacing */
+            }
+            
+            
+            &:nth-child(1){ 
+                background: @roxo;
+                color: @amarelo;
+                
+                div:before {
+                    background: @amarelo;
+                    color: @roxo;
+                }
+            }
+            &:nth-child(2){ 
+                background: @amarelo;
+                color: @vermelho;
+                
+                div:before {
+                    background: @vermelho;
+                    color: @amarelo;
+                }
+            }
+            &:nth-child(3){ 
+                background: @vermelho; 
+                color: @amarelo;
+                
+                div:before {
+                    background: @amarelo;
+                    color: @vermelho;
+                }
+            }
+            &:nth-child(4){ 
+                background: @verde;
+                color: @roxo;
+                
+                div:before {
+                    background: @roxo;
+                    color: @verde;
+                }
+            }
+            
+            div {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 388px;
+                
+                &:before {
+                    content: counter(section);
+                    
+                    display: inline-block;
+                    font-size: 14px;
+                    padding: 7px;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    .box-sizing (border-box);
+                    margin-bottom: 15px;
+                }
+                
+                h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 24px;
+                }
+                
+                p {
+                    font-size: 16px;
+                }
+            }
+            
+            
+            
+            
+        }
+    }
+}

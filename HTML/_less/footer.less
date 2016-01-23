@@ -1,0 +1,72 @@
+#interface > footer {
+    padding-bottom: 118px;
+    
+    ul {
+        text-align: center;
+        padding: 80px 0 63px;
+        
+        li {
+            display: inline-block;
+            
+            a {
+                padding-left: 42px;
+                margin-left: 28px;
+                font-size: 15px;
+                line-height: 33px;
+                height: 33px;
+                display: inline-block;
+            }
+            
+            &#footerFacebook {
+                a {
+                    margin-left: 0;
+                    background: url(../_imgs/facebookVerde.png) no-repeat left center;
+                    color: @verde;
+                }
+            }
+            
+             &#footerInstagram {
+                a {
+                    background: url(../_imgs/instagramRoxo.png) no-repeat left center;
+                    color: @roxo;
+                }
+            }
+            
+             &#footerTwitter {
+                a {
+                    background: url(../_imgs/twitterVermelho.png) no-repeat left center;
+                    color: @vermelho;
+                }
+            }
+        }
+    }
+    
+    section {
+        max-width: 470px;
+        margin: 0 auto;
+        
+        h1 {
+            .imageReplacement('../_imgs/logoCores.png');
+            float: left;
+            width: 213px;
+            height: 49px;
+            margin-right: 20px;
+        }
+        
+        address {
+            p {
+                font-size: 12px;
+                color: #676767;
+                text-align: left;
+                
+                a {
+                    color: #676767;
+                    
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+#section4 {
+    height: 973px;
+    position: relative;
+    
+    >h1 {
+        font-size: 35px;
+        color: @vermelho;
+        padding-bottom: 0;
+        margin-bottom: -5px;
+    }
+    
+    >h2 {
+        font-size: 25px;
+        padding: 0;
+    }
+    
+    ul {
+        position: absolute;
+        bottom: 0;
+        width: 1240px;
+        background: url(../_imgs/celular.png) no-repeat 368px bottom;
+        padding: 250px 0 0;
+        height: 816px;
+        left: 50%;
+        margin-left: -620px;
+        
+        
+        li {
+            
+            h1 {
+                font-size: 35px;
+                padding-bottom: 10px;
+            }
+            
+            p {
+                font-size: 20px;
+            }
+           
+            &:first-child {
+                float: left;
+                width: 330px;
+                text-align: right;
+                
+                h1 {
+                    color: @roxo;
+                    padding-top: 90px;
+                    background: url(../_imgs/icones1.png) no-repeat center top;
+                    text-align: right;
+                }
+                p { text-align: right; }
+            }
+            
+            &:last-child {
+                float: right;
+                width: 330px;
+                text-align: left;
+                
+                h1 {
+                    color: @verde;
+                    text-align: left;
+                }
+                
+                p {
+                    padding-bottom: 90px;
+                    background: url(../_imgs/icones2.png) no-repeat center bottom;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
